@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --THEME-COLOR: rgba(128, 0, 0, 0.587);
+    --BORDER-COLOR:rgba(0, 0, 0, 0.594);
+    --BACKGROUND-COLOR: rgba(0, 128, 0, 0.646);
+}
+
+html{
+    font-family: cursive;
+}
+
+body{
+    min-height: 100vh;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    background-image: url(signup-page1-background-image.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-box{
+    
+    width: 30rem;
+    height: 30rem;
+    
+    border:2px solid var(--BORDER-COLOR);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 22px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem 0.5rem 2rem;
+    margin: 1rem;
+ 
+    
+}
+
+
+
+
+.heading{
+    width: 100%;
+    text-align: center;
+
+}
+.heading hr{
+    border-color: black;
+    margin-top: 0.1rem;
+}
+.signup-box .options{
+    height: 4rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    
+    background-color: transparent;
+
+    
+}
+
+
+.options label{
+    font-weight: bold;
+}
+.options input{
+    height: 2.1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 12rem;
+    border: 1px solid var(--BORDER-COLOR);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    outline: none;
+    color: black;
+}
+.options input::placeholder{
+    color: black;
+    font-size: 0.85rem;
+    font-family: cursive;
+}
+
+.signup-box .signup-button{
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+
+    border: 2px solid var(--BORDER-COLOR);
+    border-radius: 2rem;
+}
+
+.login-button{
+    margin: 1rem 0 0 6rem;
+}
+.login-button p a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.login-button a:hover{
+    text-decoration: underline;
+}
+
+
+
